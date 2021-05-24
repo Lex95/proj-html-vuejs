@@ -1,0 +1,46 @@
+nav {
+    background-image: url("../../images/home_slider.jpg");
+    // da mettere un po' a posto l'immagine
+    background-position: center;
+    .navbar {
+        padding: 20px 30px;
+        align-items: center;
+        img {
+            height: 50px;
+        }
+        i {
+            color: $text_color_primary;
+            font-size: 30px;
+        }
+    }
+    .textbox {
+        text-align: center;
+        color: $text_color_primary;
+        padding: 100px 0 200px;
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-style: italic;
+            margin: 30px 0 40px;
+        }
+        button {
+            text-transform: uppercase;
+            padding: 10px 20px;
+            &:hover {
+                background-color: $text_color_primary;
+                color: $text_color_tertiary;
+            }
+        }
+        .b1 {
+            background-color: $primary_red;
+            color: $text_color_primary;
+            border: none;
+        }
+        .b2 {
+            background-color: transparent;
+            color: $text_color_primary;
+            border: 1px solid $text_color_primary;
+        }
+    }
+}
