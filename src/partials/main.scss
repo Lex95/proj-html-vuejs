@@ -1,0 +1,84 @@
+#s1 {
+    background-color: $bg_color_primary;
+    .redbar {
+        width: 200px;
+        height: 10px;
+        margin: auto;
+        background-color: $secondary_red;
+    }
+    .text-container{
+        padding: 40px 0;
+        text-align: center;
+        h2 {
+            text-transform: capitalize;
+            font-size: 30px;
+            color: $text_color_primary;
+        }
+        .rule {
+            width: 150px;
+            height: 1px;
+            background-color: $hr_primary;
+            margin: 20px auto;
+        }
+        p {
+            color: $text_color_secondary;
+        }
+    }
+}
+
+#s2 {
+    background-color: $bg_color_secondary;
+    padding: 50px 0;
+    .text-container{
+        text-align: center;
+        h2 {
+            text-transform: capitalize;
+            font-size: 30px;
+            color: $text_color_primary;
+        }
+        .rule {
+            width: 150px;
+            height: 1px;
+            background-color: $hr_primary;
+            margin: 20px auto;
+        }
+        p {
+            color: $text_color_secondary;
+        }
+    }
+    .main {
+        width: $collection_width;
+        height: $collection_width * 1.2;
+        margin: 20px auto 0;
+        .left {
+            width: calc((100% - 20px) / 3 * 2);
+            flex-wrap: wrap;
+            margin-right: 20px;
+            .h {
+                width: 100%;
+                height: calc((100% - 20px * 2) / 4);
+                background-color: $bg_color_primary;
+            }
+            .v {
+                width: calc((100% - 20px) / 2);
+                height: calc((100% - 20px * 2) / 2);
+                background-color: $bg_color_primary;
+                margin: 20px 0;
+                &:nth-child(2) {
+                    margin-right: 20px;
+                }
+            }
+        }
+        .right {
+            width: calc(100% / 3);
+            .v {
+                width: 100%;
+                height: calc((100% - 20px) / 2);
+                background-color: $bg_color_primary;
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

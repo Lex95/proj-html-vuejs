@@ -57,3 +57,88 @@ nav .textbox .b2 {
   color: #fefefe;
   border: 1px solid #fefefe;
 }
+
+#s1 {
+  background-color: #323844;
+}
+#s1 .redbar {
+  width: 200px;
+  height: 10px;
+  margin: auto;
+  background-color: #eb4b54;
+}
+#s1 .text-container {
+  padding: 40px 0;
+  text-align: center;
+}
+#s1 .text-container h2 {
+  text-transform: capitalize;
+  font-size: 30px;
+  color: #fefefe;
+}
+#s1 .text-container .rule {
+  width: 150px;
+  height: 1px;
+  background-color: #859fb4;
+  margin: 20px auto;
+}
+#s1 .text-container p {
+  color: #aeaeaf;
+}
+
+#s2 {
+  background-color: #252a33;
+  padding: 50px 0;
+}
+#s2 .text-container {
+  text-align: center;
+}
+#s2 .text-container h2 {
+  text-transform: capitalize;
+  font-size: 30px;
+  color: #fefefe;
+}
+#s2 .text-container .rule {
+  width: 150px;
+  height: 1px;
+  background-color: #859fb4;
+  margin: 20px auto;
+}
+#s2 .text-container p {
+  color: #aeaeaf;
+}
+#s2 .main {
+  width: 1000px;
+  height: 1200px;
+  margin: 20px auto 0;
+}
+#s2 .main .left {
+  width: calc((100% - 20px) / 3 * 2);
+  flex-wrap: wrap;
+  margin-right: 20px;
+}
+#s2 .main .left .h {
+  width: 100%;
+  height: calc((100% - 20px * 2) / 4);
+  background-color: #323844;
+}
+#s2 .main .left .v {
+  width: calc((100% - 20px) / 2);
+  height: calc((100% - 20px * 2) / 2);
+  background-color: #323844;
+  margin: 20px 0;
+}
+#s2 .main .left .v:nth-child(2) {
+  margin-right: 20px;
+}
+#s2 .main .right {
+  width: calc(100% / 3);
+}
+#s2 .main .right .v {
+  width: 100%;
+  height: calc((100% - 20px) / 2);
+  background-color: #323844;
+}
+#s2 .main .right .v:first-child {
+  margin-bottom: 20px;
+}
