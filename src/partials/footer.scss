@@ -1,0 +1,55 @@
+footer {
+    .logo-banner {
+        padding: 40px;
+        background-color: $bg_color_secondary;
+        align-items: center;
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                margin-left: 20px;
+                a {
+                    color: $text_color_secondary;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    &:hover {
+                        color: $text_color_primary;
+                    }
+                }
+            }
+        }
+    }
+    .credits-banner {
+        padding: 30px 40px;
+        background-color: $bg_color_primary;
+        align-items: center;
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                color: $text_color_secondary;
+            }
+        }
+        .credits {
+            li {
+                padding: 0 10px;
+                &:nth-child(n+2) {
+                    border-left: 1px solid $text_color_secondary;
+                }
+            }
+        }
+        .socials {
+            li {
+                text-align: center;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                background-color: $bg_color_secondary;
+                margin-left: 10px;
+                &:hover {
+                    color: $text_color_primary;
+                }
+            }
+        }
+    }
+}

@@ -220,3 +220,53 @@ nav .textbox p {
   color: #ea4a56;
   text-transform: uppercase;
 }
+
+footer .logo-banner {
+  padding: 40px;
+  background-color: #252a33;
+  align-items: center;
+}
+footer .logo-banner ul {
+  list-style: none;
+}
+footer .logo-banner ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+footer .logo-banner ul li a {
+  color: #aeaeaf;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+footer .logo-banner ul li a:hover {
+  color: #fefefe;
+}
+footer .credits-banner {
+  padding: 30px 40px;
+  background-color: #323844;
+  align-items: center;
+}
+footer .credits-banner ul {
+  list-style: none;
+}
+footer .credits-banner ul li {
+  display: inline-block;
+  color: #aeaeaf;
+}
+footer .credits-banner .credits li {
+  padding: 0 10px;
+}
+footer .credits-banner .credits li:nth-child(n+2) {
+  border-left: 1px solid #aeaeaf;
+}
+footer .credits-banner .socials li {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #252a33;
+  margin-left: 10px;
+}
+footer .credits-banner .socials li:hover {
+  color: #fefefe;
+}
