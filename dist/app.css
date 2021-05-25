@@ -193,6 +193,21 @@ nav .textbox p {
 #s2 .main .item .text-box p {
   color: #aeaeaf;
 }
+#s2 .main .item:hover .text-box {
+  height: 100%;
+  background-color: #ea4a569c;
+}
+#s2 .main .item:hover .text-box h3 {
+  color: #fefefe;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% - 40px);
+  text-align: center;
+}
+#s2 .main .item:hover .text-box p {
+  display: none;
+}
 #s2 .main #i1 {
   background-image: url(/images/blog_music_techo-1200x600.jpg?70f7395a6c4f78d6c1ac07abde143388);
 }

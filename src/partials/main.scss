@@ -63,6 +63,23 @@
                     color: $text_color_secondary;
                 }
             }
+            &:hover {
+                .text-box {
+                    height: 100%;
+                    background-color: #ea4a569c;
+                    h3 {
+                        color: $text_color_primary;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: calc(100% - 40px);
+                        text-align: center;
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+            }
         }
         #i1 {
             background-image: url("../../images/blog_music_techo-1200x600.jpg");
