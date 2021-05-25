@@ -142,12 +142,9 @@
                 <img src="images/logo_footer.png" alt="">
                 <div class="filler"></div>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Meet the band</a></li>
-                    <li><a href="#">Live dates</a></li>
-                    <li><a href="#">Latest news</a></li>
-                    <li><a href="#">Albums</a></li>
-                    <li><a href="#">Fans</a></li>
+                    <li v-for="link in links">
+                        <a :href="link.href">{{link.name}}</a>
+                    </li>
                 </ul>
             </div>
             <div class="credits-banner container-flex">
@@ -159,13 +156,8 @@
                 </ul>
                 <div class="filler"></div>
                 <ul class="socials">
-                    <li><i class="fa fa-facebook" aria-hidden="true"></i>
-                    </li>
-                    <li><i class="fa fa-twitter" aria-hidden="true"></i>
-                    </li>
-                    <li><i class="fa fa-instagram" aria-hidden="true"></i>
-                    </li>
-                    <li><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <li v-for="social in socials">
+                        <i :class="social.logo" aria-hidden="true"></i>
                     </li>
                 </ul>
             </div>

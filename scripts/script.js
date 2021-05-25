@@ -28,6 +28,24 @@ const app = new Vue({
             }
         ],
         navMenuOpen: false,
+        socials: [
+            {
+                name: "Facebook",
+                logo: "fa fa-facebook"
+            },
+            {
+                name: "Twitter",
+                logo: "fa fa-twitter"
+            },
+            {
+                name: "Instagram",
+                logo: "fa fa-instagram"
+            },
+            {
+                name: "Youtube",
+                logo: "fa fa-youtube-play"
+            },
+        ],
         liveDates: [
             {
                 date: "17/08/2020",
