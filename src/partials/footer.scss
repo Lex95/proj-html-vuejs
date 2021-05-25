@@ -4,7 +4,6 @@ footer {
         background-color: $bg_color_secondary;
         align-items: center;
         ul {
-            list-style: none;
             li {
                 display: inline-block;
                 margin-left: 20px;
@@ -24,10 +23,10 @@ footer {
         background-color: $bg_color_primary;
         align-items: center;
         ul {
-            list-style: none;
             li {
                 display: inline-block;
                 color: $text_color_secondary;
+                font-size: small;
             }
         }
         .credits {

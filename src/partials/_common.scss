@@ -33,13 +33,15 @@ button {
 }
 .text-container{
     text-align: center;
+    width: 900px;
+    margin: auto;
     h2 {
         text-transform: capitalize;
         font-size: 30px;
         color: $text_color_primary;
     }
     .rule {
-        width: 150px;
+        width: 200px;
         height: 1px;
         background-color: $hr_primary;
         margin: 20px auto;
