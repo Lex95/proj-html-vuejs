@@ -12,6 +12,27 @@
   flex-grow: 1;
 }
 
+button {
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+button:hover {
+  background-color: #fefefe;
+  color: black;
+}
+
+.b1 {
+  background-color: #ea4a56;
+  color: #fefefe;
+  border: none;
+}
+
+.b2 {
+  background-color: transparent;
+  color: #fefefe;
+  border: 1px solid #fefefe;
+}
+
 nav {
   background-image: url(/images/home_slider.jpg?10c2d1fa9d6e2b412ae9997a7957e1a6);
   background-position: center;
@@ -38,24 +59,6 @@ nav .textbox h1 {
 nav .textbox p {
   font-style: italic;
   margin: 30px 0 40px;
-}
-nav .textbox button {
-  text-transform: uppercase;
-  padding: 10px 20px;
-}
-nav .textbox button:hover {
-  background-color: #fefefe;
-  color: black;
-}
-nav .textbox .b1 {
-  background-color: #ea4a56;
-  color: #fefefe;
-  border: none;
-}
-nav .textbox .b2 {
-  background-color: transparent;
-  color: #fefefe;
-  border: 1px solid #fefefe;
 }
 
 #s1 {
@@ -117,28 +120,91 @@ nav .textbox .b2 {
   flex-wrap: wrap;
   margin-right: 20px;
 }
-#s2 .main .left .h {
+#s2 .main .left .horizontal {
   width: 100%;
   height: calc((100% - 20px * 2) / 4);
-  background-color: #323844;
 }
-#s2 .main .left .v {
+#s2 .main .left .vertical {
   width: calc((100% - 20px) / 2);
   height: calc((100% - 20px * 2) / 2);
-  background-color: #323844;
   margin: 20px 0;
 }
-#s2 .main .left .v:nth-child(2) {
+#s2 .main .left .vertical:nth-child(2) {
   margin-right: 20px;
 }
 #s2 .main .right {
   width: calc(100% / 3);
 }
-#s2 .main .right .v {
+#s2 .main .right .vertical {
   width: 100%;
   height: calc((100% - 20px) / 2);
-  background-color: #323844;
 }
-#s2 .main .right .v:first-child {
+#s2 .main .right .vertical:first-child {
   margin-bottom: 20px;
+}
+#s2 .main .item {
+  background-size: cover;
+  position: relative;
+}
+#s2 .main .item .text-box {
+  background-color: #323844;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#s2 .main .item .text-box h3 {
+  color: #eb4b54;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+#s2 .main .item .text-box p {
+  color: #aeaeaf;
+}
+#s2 .main #i1 {
+  background-image: url(/images/blog_music_techo-1200x600.jpg?70f7395a6c4f78d6c1ac07abde143388);
+}
+#s2 .main #i2 {
+  background-image: url(/images/blog-post3-600x900.jpg?eaab16f5b0f91d629c4d5d0e2435748b);
+}
+#s2 .main #i3 {
+  background-image: url(/images/blog-post4-600x900.jpg?55ed6f89e24fa541a7a5bf175953b8a4);
+}
+#s2 .main #i4 {
+  background-image: url(/images/blog_flavor_rock-1200x600.jpg?aa3d3bde48239742ecf9aad2050c619a);
+}
+#s2 .main #i5 {
+  background-image: url(/images/blog-post1-600x900.jpg?48a46261908a6ee39cbb1eed1c0a90c7);
+}
+#s2 .main #i6 {
+  background-image: url(/images/blog-post2-600x900.jpg?6b77b6a8a91a28dcad1d6cc22129b06e);
+}
+
+#s3 button {
+  width: 100%;
+  height: 100%;
+  padding: 40px 0;
+}
+
+#s4 {
+  background-image: url(/images/home-testimonial-parallax.jpg?d0e61e92e0e016874b1f84a2bf40d7e6);
+  background-size: cover;
+  padding: 200px 0;
+}
+#s4 .textbox {
+  width: 500px;
+  margin: auto;
+}
+#s4 .textbox p {
+  color: #fefefe;
+  font-style: italic;
+  text-align: center;
+  line-height: 20px;
+}
+#s4 .textbox img {
+  display: block;
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  margin-top: 30px;
 }

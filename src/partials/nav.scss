@@ -24,23 +24,5 @@ nav {
             font-style: italic;
             margin: 30px 0 40px;
         }
-        button {
-            text-transform: uppercase;
-            padding: 10px 20px;
-            &:hover {
-                background-color: $text_color_primary;
-                color: $text_color_tertiary;
-            }
-        }
-        .b1 {
-            background-color: $primary_red;
-            color: $text_color_primary;
-            border: none;
-        }
-        .b2 {
-            background-color: transparent;
-            color: $text_color_primary;
-            border: 1px solid $text_color_primary;
-        }
     }
 }
