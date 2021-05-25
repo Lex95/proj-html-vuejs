@@ -27,3 +27,20 @@ button {
     color: $text_color_primary;
     border: 1px solid $text_color_primary;
 }
+.text-container{
+    text-align: center;
+    h2 {
+        text-transform: capitalize;
+        font-size: 30px;
+        color: $text_color_primary;
+    }
+    .rule {
+        width: 150px;
+        height: 1px;
+        background-color: $hr_primary;
+        margin: 20px auto;
+    }
+    p {
+        color: $text_color_secondary;
+    }
+}
