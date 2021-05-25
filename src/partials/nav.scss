@@ -2,9 +2,16 @@ nav {
     background-image: url("../../images/home_slider.jpg");
     // da mettere un po' a posto l'immagine
     background-position: center;
+    height: 100vh;
+    position: relative;
     .navbar {
+        width: 100%;
         padding: 20px 30px;
         align-items: center;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
         img {
             height: 50px;
         }
@@ -13,10 +20,41 @@ nav {
             font-size: 30px;
         }
     }
+    .navmenu {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: $primary_red;
+        z-index: 1;
+        ul {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            li {
+                text-align: center;
+                margin-bottom: 20px;
+                a {
+                    color: $tertiary_red;
+                    text-decoration: none;
+                    font-size: 20px;
+                    &:hover {
+                        cursor: pointer;
+                        color: $text_color_primary;
+                    }
+                }
+            }
+        }
+    }
     .textbox {
         text-align: center;
         color: $text_color_primary;
-        padding: 100px 0 200px;
+        // mixin?
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         h1 {
             font-size: 50px;
         }

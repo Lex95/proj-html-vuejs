@@ -35,6 +35,7 @@ footer {
                 padding: 0 10px;
                 &:nth-child(n+2) {
                     border-left: 1px solid $text_color_secondary;
+                    text-transform: uppercase;
                 }
             }
         }
