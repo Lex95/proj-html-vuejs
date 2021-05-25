@@ -110,26 +110,23 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolore? Ipsum rerum sit voluptatibus illum veritatis, sunt incidunt explicabo qui dignissimos eum sint dolor tenetur!</p>
                 </div>
                 <ul>
-                    <!-- da rifare con il v-for più avanti -->
-                    <li>
-                        <span>+</span>
-                        <p>17/8/2020 gem festival 2020 anakalia, georgia</p>
-                    </li>
-                    <li>
-                        <span>+</span>
-                        <p>17/8/2020 gem festival 2020 anakalia, georgia</p>
-                    </li>
-                    <li>
-                        <span>+</span>
-                        <p>17/8/2020 gem festival 2020 anakalia, georgia</p>
-                    </li>
-                    <li>
-                        <span>+</span>
-                        <p>17/8/2020 gem festival 2020 anakalia, georgia</p>
-                    </li>
-                    <li>
-                        <span>+</span>
-                        <p>17/8/2020 gem festival 2020 anakalia, georgia</p>
+                    <li v-for="concert in liveDates">
+                        <span @click="toggleConcertInfo(concert)" :class="{'open': concert.expanded, 'closed': !concert.expanded}" ></span>
+                        <p>{{concert.date}} {{concert.eventName}} {{concert.location}}</p>
+                        <div v-if="concert.expanded" class="container-flex expansion">
+                            <div class="map-container">
+                                <img :src="concert.map" :alt="concert.location">
+                                <div class="marker">
+                                    <img src="images/avada-music-logo-mobile.png" alt="">
+                                    <div class="tip"></div>
+                                </div>
+                            </div>
+                            <div class="textbox container-flex">
+                                <h3>Untold Stories</h3>
+                                <p>{{concert.description}}</p>
+                                <button class="b1">Book Now</button>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </section>

@@ -6,7 +6,7 @@
         margin: auto;
         background-color: $secondary_red;
     }
-    .text-container{
+    .text-container {
         padding: 40px 0;
     }
 }
@@ -48,7 +48,7 @@
         .item {
             background-size: cover;
             position: relative;
-            .text-box{
+            .text-box {
                 background-color: $bg_color_primary;
                 padding: 20px;
                 position: absolute;
@@ -85,7 +85,8 @@
     }
 }
 
-#s3, #s6 {
+#s3,
+#s6 {
     button {
         width: 100%;
         height: 100%;
@@ -132,11 +133,84 @@
             margin-bottom: 8px;
             span {
                 color: $text_color_primary;
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                text-align: center;
+                margin-right: 15px;
+                line-height: 15px;
             }
-            p {
+            .open {
+                background-color: $primary_red;
+                &::after {
+                    content: "-";
+                }
+            }
+            .closed::after {
+                content: "+";
+            }
+            & > p {
                 display: inline-block;
                 color: $primary_red;
                 text-transform: uppercase;
+            }
+            .expansion {
+                margin-top: 15px;
+                .map-container {
+                    position: relative;
+                    & > img {
+                        height: 300px;
+                        width: 400px;
+                        margin-right: 15px;
+                    }
+                    .marker {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 25px;
+                        height: 25px;
+                        background-color: $primary_red;
+                        border-radius: 50%;
+                        text-align: center;
+                        img {
+                            width: 15px;
+                            height: 15px;
+                            filter: brightness(5);
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            z-index: 1;
+                        }
+                        .tip {
+                            width: 15px;
+                            height: 15px;
+                            transform: rotate(45deg);
+                            position: absolute;
+                            bottom: -1px;
+                            left: 5px;
+                            background-color: $primary_red;
+                        }
+                    }
+                }
+                .textbox {
+                    text-align: left;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    h3 {
+                        color: $text_color_primary;
+                        margin-top: 15px;
+                    }
+                    p {
+                        color: $text_color_secondary;
+                        line-height: 30px;
+                    }
+                    button {
+                        display: inline-block;
+                        align-self: flex-start;
+                    }
+                }
             }
         }
     }
