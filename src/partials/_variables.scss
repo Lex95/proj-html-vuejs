@@ -21,3 +21,6 @@ $collection_width: 1000px;
 // spacing
 $default_spacing: 40px;
 $section_padding: $default_spacing/2*3;
+
+//transitions
+$easeOutCubic: cubic-bezier(0.33, 1, 0.68, 1);

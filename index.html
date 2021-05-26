@@ -20,7 +20,7 @@
                 <div class="filler"></div>
                 <i class="fa clickable" :class="{'fa-bars': !navMenuOpen, 'fa-times': navMenuOpen}" @click="toggleNavMenu" aria-hidden="true"></i>
             </div>
-            <div v-if="navMenuOpen" class="navmenu">
+            <div class="navmenu" :class="{notActive: !navMenuOpen}">
                 <ul>
                     <li v-for="link in links">
                         <a :href="link.href" @click="toggleNavMenu">{{link.name}}</a>
@@ -116,7 +116,7 @@
                             <i v-else class="fa fa-plus" aria-hidden="true"></i>
                         </span>
                         <p>{{concert.date}} {{concert.eventName}} {{concert.location}}</p>
-                        <div v-if="concert.expanded" class="container-flex expansion">
+                        <div :class="{notActive: !concert.expanded}" class="container-flex expansion">
                             <div class="map-container">
                                 <img :src="concert.map" :alt="concert.location">
                                 <div class="marker">

@@ -35,10 +35,12 @@ p {
 button {
     text-transform: uppercase;
     padding: 15px 30px;
+    transition: background-color 0.2s linear;
     &:hover {
         background-color: $text_color_primary;
         color: $text_color_tertiary;
         cursor: pointer;
+        transition: background-color 0.2s linear;
     }
 }
 .b1 {

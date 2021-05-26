@@ -44,11 +44,13 @@ p {
 button {
   text-transform: uppercase;
   padding: 15px 30px;
+  transition: background-color 0.2s linear;
 }
 button:hover {
   background-color: #fefefe;
   color: black;
   cursor: pointer;
+  transition: background-color 0.2s linear;
 }
 
 .b1 {
@@ -122,6 +124,11 @@ nav .navmenu {
   left: 0;
   background-color: #ea4a56;
   z-index: 1;
+  overflow: hidden;
+  transition: height 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+nav .navmenu.notActive {
+  height: 0;
 }
 nav .navmenu ul {
   position: relative;
@@ -207,6 +214,12 @@ nav .textbox button {
 #s2 .main .right .vertical:first-child {
   margin-bottom: 20px;
 }
+#s2 .main .vertical .text-box {
+  height: 20%;
+}
+#s2 .main .horizontal .text-box {
+  height: 31%;
+}
 #s2 .main .item {
   background-size: cover;
   position: relative;
@@ -217,6 +230,7 @@ nav .textbox button {
   position: absolute;
   bottom: 0;
   width: 100%;
+  transition: height 0.5s cubic-bezier(0.33, 1, 0.68, 1), background-color 0.5s linear;
 }
 #s2 .main .item .text-box * {
   line-height: 30px;
@@ -224,14 +238,17 @@ nav .textbox button {
 #s2 .main .item .text-box h3 {
   color: #eb4b54;
   font-weight: bold;
+  transition: color 0.5s cubic-bezier(0.33, 1, 0.68, 1);
 }
 #s2 .main .item .text-box p {
   color: #aeaeaf;
   font-size: 13px;
+  transition: display 0.5s cubic-bezier(0.33, 1, 0.68, 1);
 }
 #s2 .main .item:hover .text-box {
   height: 100%;
   background-color: #ea4a569c;
+  transition: height 0.5s cubic-bezier(0.33, 1, 0.68, 1);
 }
 #s2 .main .item:hover .text-box h3 {
   color: #fefefe;
@@ -240,9 +257,11 @@ nav .textbox button {
   transform: translateY(-50%);
   width: calc(100% - 40px);
   text-align: center;
+  transition: color 0.5s cubic-bezier(0.33, 1, 0.68, 1);
 }
 #s2 .main .item:hover .text-box p {
   display: none;
+  transition: display 0.5s cubic-bezier(0.33, 1, 0.68, 1);
 }
 #s2 .main #i1 {
   background-image: url(/images/blog_music_techo-1200x600.jpg?70f7395a6c4f78d6c1ac07abde143388);
@@ -292,9 +311,11 @@ nav .textbox button {
   width: 70px;
   height: 70px;
   margin-top: 30px;
+  transition: filter 0.2s linear;
 }
 #s4 .textbox img:hover {
   filter: invert(1);
+  transition: filter 0.2s linear;
 }
 
 #s5 {
@@ -323,6 +344,9 @@ nav .textbox button {
   line-height: 15px;
   font-size: 10px;
 }
+#s5 ul li span:hover {
+  background-color: #ea4a56;
+}
 #s5 ul li .open {
   background-color: #ea4a56;
 }
@@ -336,13 +360,22 @@ nav .textbox button {
 #s5 ul li .expansion {
   margin-top: 20px;
   padding: 10px;
+  height: 250px;
+  overflow: hidden;
+  transition: height 0.5s cubic-bezier(0.33, 1, 0.68, 1), padding 0.5s cubic-bezier(0.33, 1, 0.68, 1), margin 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+#s5 ul li .expansion.notActive {
+  height: 0;
+  margin: 0;
+  padding: 0;
 }
 #s5 ul li .expansion .map-container {
   position: relative;
+  height: 225px;
+  margin-right: 40px;
 }
 #s5 ul li .expansion .map-container > img {
   width: 300px;
-  margin-right: 40px;
 }
 #s5 ul li .expansion .map-container .marker {
   position: absolute;

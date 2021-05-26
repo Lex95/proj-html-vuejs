@@ -28,6 +28,11 @@ nav {
         left: 0;
         background-color: $primary_red;
         z-index: 1;
+        overflow: hidden;
+        transition: height 0.5s $easeOutCubic;
+        &.notActive {
+            height: 0;
+        }
         ul {
             position: relative;
             top: 50%;
