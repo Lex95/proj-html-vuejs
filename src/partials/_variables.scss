@@ -1,19 +1,14 @@
 // colori
-// bottone
 $primary_red: #ea4a56;
-// nav window e banner album
 $secondary_red: #eb4b54;
-// nav text
 $tertiary_red: #f68994;
 
-// bianco
+// testi
 $text_color_primary: #fefefe;
-// grigio chiaro
 $text_color_secondary: #aeaeaf;
-// nero
 $text_color_tertiary: black;
 
-// hr forse
+// hr
 $hr_primary: #859fb4;
 
 // bg
@@ -22,3 +17,7 @@ $bg_color_secondary: #252a33;
 
 // li rifaccio a mano che vengono meglio i colori, valà
 $collection_width: 1000px;
+
+// spacing
+$default_spacing: 40px;
+$section_padding: $default_spacing/2*3;

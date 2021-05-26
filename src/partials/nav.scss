@@ -6,7 +6,7 @@ nav {
     position: relative;
     .navbar {
         width: 100%;
-        padding: 20px 30px;
+        padding: $default_spacing/2 $default_spacing;
         align-items: center;
         z-index: 2;
         position: absolute;
@@ -34,13 +34,13 @@ nav {
             transform: translateY(-50%);
             li {
                 text-align: center;
-                margin-bottom: 20px;
+                margin-bottom: $default_spacing;
                 a {
                     color: $tertiary_red;
                     text-decoration: none;
-                    font-size: 20px;
+                    font-size: 23px;
+                    z-index: 3;
                     &:hover {
-                        cursor: pointer;
                         color: $text_color_primary;
                     }
                 }
@@ -51,12 +51,13 @@ nav {
         text-align: center;
         color: $text_color_primary;
         @include absoluteCenter;
-        h1 {
-            font-size: 50px;
-        }
         p {
             font-style: italic;
-            margin: 30px 0 40px;
+            font-size: 20px;
+            margin: $default_spacing/4*3 0 $default_spacing;
+        }
+        button {
+            margin: 0 $default_spacing/8;
         }
     }
 }

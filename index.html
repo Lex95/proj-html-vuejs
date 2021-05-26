@@ -18,7 +18,7 @@
             <div class="navbar container-flex">
                 <img src="images/avada-music-logo-retina.png" alt="">
                 <div class="filler"></div>
-                <i class="fa" :class="{'fa-bars': !navMenuOpen, 'fa-times': navMenuOpen}" @click="toggleNavMenu" aria-hidden="true"></i>
+                <i class="fa clickable" :class="{'fa-bars': !navMenuOpen, 'fa-times': navMenuOpen}" @click="toggleNavMenu" aria-hidden="true"></i>
             </div>
             <div v-if="navMenuOpen" class="navmenu">
                 <ul>
@@ -53,25 +53,25 @@
                 </div>
                 <div class="container-flex main">
                     <div class="container-flex left">
-                        <div class="item horizontal" id="i1">
+                        <div class="item clickable horizontal" id="i1">
                             <div class="text-box">
                                 <h3>Technology and music</h3>
                                 <p>Sed sit amet sem turpis. Curabitur cursus lacinia est at interdumrisus id condimentum.</p>
                             </div>
                         </div>
-                        <div class="item vertical" id="i2">
+                        <div class="item clickable vertical" id="i2">
                             <div class="text-box">
                                 <h3>While my guitar gently weeps</h3>
                                 <p>Sed sit amet sem turpis.Curabitur cursus lacinia est at interdumrisus id condimentum.</p>
                             </div>
                         </div>
-                        <div class="item vertical" id="i3">
+                        <div class="item clickable vertical" id="i3">
                             <div class="text-box">
                                 <h3>It just sounds better</h3>
                                 <p>Sed sit amet sem turpis.Curabitur cursus lacinia est at interdumrisus id condimentum.</p>
                             </div>
                         </div>
-                        <div class="item horizontal" id="i4">
+                        <div class="item clickable horizontal" id="i4">
                             <div class="text-box">
                                 <h3>The flavor of rock</h3>
                                 <p>Sed sit amet sem turpis.Curabitur cursus lacinia est at interdumrisus id condimentum.</p>
@@ -79,13 +79,13 @@
                         </div>
                     </div>
                     <div class="right">
-                        <div class="item vertical" id="i5">
+                        <div class="item clickable vertical" id="i5">
                             <div class="text-box">
                                 <h3>Taking it back to the old school</h3>
                                 <p>Sed sit amet sem turpis.Curabitur cursus lacinia est at interdumrisus id condimentum.</p>
                             </div>
                         </div>
-                        <div class="item vertical" id="i6">
+                        <div class="item clickable vertical" id="i6">
                             <div class="text-box">
                                 <h3>Sharing the stage with a legend</h3>
                                 <p>Sed sit amet sem turpis.Curabitur cursus lacinia est at interdumrisus id condimentum.</p>
@@ -100,7 +100,7 @@
             <section id="s4">
                 <div class="textbox">
                     <p>"I just listened to it and said to myself, "Man, I really love this album." Still, today, it just sounds so fresh. It sounds full of ideas. These guys knew what they were doing. They're good. And they're inventive. I haven't heard anything this year that's as inventive. I don't really expect to."</p>
-                    <img src="images/band_interview_play_icon.png" alt="">
+                    <img src="images/band_interview_play_icon.png" class="clickable" alt="">
                 </div>
             </section>
             <section id="s5">
@@ -111,7 +111,10 @@
                 </div>
                 <ul>
                     <li v-for="concert in liveDates">
-                        <span @click="toggleConcertInfo(concert)" :class="{'open': concert.expanded, 'closed': !concert.expanded}" ></span>
+                        <span @click="toggleConcertInfo(concert)" :class="{'open': concert.expanded}" class="clickable">
+                            <i v-if="concert.expanded" class="fa fa-minus" aria-hidden="true"></i>
+                            <i v-else class="fa fa-plus" aria-hidden="true"></i>
+                        </span>
                         <p>{{concert.date}} {{concert.eventName}} {{concert.location}}</p>
                         <div v-if="concert.expanded" class="container-flex expansion">
                             <div class="map-container">
@@ -122,7 +125,7 @@
                                 </div>
                             </div>
                             <div class="textbox container-flex">
-                                <h3>Untold Stories</h3>
+                                <h4>Untold Stories</h4>
                                 <p>{{concert.description}}</p>
                                 <button class="b1">Book Now</button>
                             </div>
@@ -153,7 +156,7 @@
                 </ul>
                 <div class="filler"></div>
                 <ul class="socials">
-                    <li v-for="social in socials">
+                    <li v-for="social in socials" class="clickable">
                         <i :class="social.logo" aria-hidden="true"></i>
                     </li>
                 </ul>

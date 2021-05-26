@@ -46,6 +46,44 @@ const app = new Vue({
                 logo: "fa fa-youtube-play"
             },
         ],
+        bandNews: [
+            {
+                title: "Technology and music",
+                desc: "Sed sit amet sem turpis. Curabitur cursus lacinia est at interdumrisus id condimentum.",
+                vertical: false,
+                image: "images/blog_music_techo-1200x600.jpg"
+            },
+            {
+                title: "Technology and music",
+                desc: "Sed sit amet sem turpis. Curabitur cursus lacinia est at interdumrisus id condimentum.",
+                vertical: true,
+                image: "images/blog_music_techo-1200x600.jpg"
+            },
+            {
+                title: "Technology and music",
+                desc: "Sed sit amet sem turpis. Curabitur cursus lacinia est at interdumrisus id condimentum.",
+                vertical: true,
+                image: "images/blog_music_techo-1200x600.jpg"
+            },
+            {
+                title: "Technology and music",
+                desc: "Sed sit amet sem turpis. Curabitur cursus lacinia est at interdumrisus id condimentum.",
+                vertical: false,
+                image: "images/blog_music_techo-1200x600.jpg"
+            },
+            {
+                title: "Technology and music",
+                desc: "Sed sit amet sem turpis. Curabitur cursus lacinia est at interdumrisus id condimentum.",
+                vertical: true,
+                image: "images/blog_music_techo-1200x600.jpg"
+            },
+            {
+                title: "Technology and music",
+                desc: "Sed sit amet sem turpis. Curabitur cursus lacinia est at interdumrisus id condimentum.",
+                vertical: true,
+                image: "images/blog_music_techo-1200x600.jpg"
+            }
+        ],
         liveDates: [
             {
                 date: "17/08/2020",
@@ -88,7 +126,6 @@ const app = new Vue({
                 expanded: false
             },
         ]
-        // maxDates: 5
     },
     methods: {
         toggleNavMenu() {

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
 }
 .container-flex {
     display: flex;
@@ -12,13 +13,32 @@
 a {
     text-decoration: none;
     color: inherit;
+    &:hover {
+        cursor: pointer;
+    }
+}
+h1 {
+    font-size: 100px;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 17px;
+}
+h4 {
+    font-weight: lighter;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
 }
 button {
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 15px 30px;
     &:hover {
         background-color: $text_color_primary;
         color: $text_color_tertiary;
+        cursor: pointer;
     }
 }
 .b1 {
@@ -33,23 +53,26 @@ button {
 }
 .text-container{
     text-align: center;
-    width: 900px;
+    width: 600px;
     margin: auto;
     h2 {
         text-transform: capitalize;
-        font-size: 30px;
         color: $text_color_primary;
     }
     .rule {
         width: 200px;
         height: 1px;
         background-color: $hr_primary;
-        margin: 20px auto;
+        margin: $default_spacing/2 auto $default_spacing/4*3;
     }
     p {
         color: $text_color_secondary;
+        font-size: 13px;
     }
 }
 ul {
     list-style: none;
+}
+.clickable:hover {
+    cursor: pointer;
 }

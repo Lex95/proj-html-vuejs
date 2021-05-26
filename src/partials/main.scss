@@ -7,17 +7,17 @@
         background-color: $secondary_red;
     }
     .text-container {
-        padding: 40px 0;
+        padding: $default_spacing 0;
     }
 }
 
 #s2 {
     background-color: $bg_color_secondary;
-    padding: 50px 0;
+    padding: $section_padding 0 $default_spacing;
     .main {
         width: $collection_width;
         height: $collection_width * 1.2;
-        margin: 20px auto 0;
+        margin: $default_spacing auto 0;
         .left {
             width: calc((100% - 20px) / 3 * 2);
             flex-wrap: wrap;
@@ -50,18 +50,20 @@
             position: relative;
             .text-box {
                 background-color: $bg_color_primary;
-                padding: 20px;
+                padding: $default_spacing/2;
                 position: absolute;
                 bottom: 0;
                 width: 100%;
+                * {
+                    line-height: 30px;
+                }
                 h3 {
                     color: $secondary_red;
                     font-weight: bold;
-                    margin-bottom: 15px;
                 }
                 p {
                     color: $text_color_secondary;
-                    line-height: 30px;
+                    font-size: 13px;
                 }
             }
             &:hover {
@@ -108,7 +110,7 @@
     button {
         width: 100%;
         height: 100%;
-        padding: 40px 0;
+        padding: $section_padding 0;
     }
 }
 
@@ -117,29 +119,33 @@
     background-size: cover;
     padding: 200px 0;
     .textbox {
-        width: 500px;
+        width: 550px;
         margin: auto;
         p {
             color: $text_color_primary;
             font-style: italic;
             text-align: center;
             line-height: 30px;
+            font-size: 20px;
         }
         img {
             display: block;
             margin: auto;
-            width: 60px;
-            height: 60px;
-            margin-top: 30px;
+            width: 70px;
+            height: 70px;
+            margin-top: $default_spacing/4*3;
+            &:hover {
+                filter: invert(1);
+            }
         }
     }
 }
 
 #s5 {
     background-color: $bg_color_secondary;
-    padding: 40px 0;
+    padding: $section_padding 0;
     .text-container {
-        margin-bottom: 25px;
+        margin-bottom: $default_spacing;
     }
     ul {
         width: $collection_width;
@@ -147,7 +153,7 @@
         li {
             background-color: $bg_color_primary;
             padding: 15px;
-            margin-bottom: 8px;
+            margin-bottom: $default_spacing/4;
             span {
                 color: $text_color_primary;
                 display: inline-block;
@@ -156,28 +162,27 @@
                 text-align: center;
                 margin-right: 15px;
                 line-height: 15px;
+                font-size: 10px;
             }
             .open {
                 background-color: $primary_red;
-                &::after {
-                    content: "-";
-                }
             }
-            .closed::after {
-                content: "+";
-            }
+
             & > p {
                 display: inline-block;
                 color: $primary_red;
                 text-transform: uppercase;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 13px;
             }
             .expansion {
-                margin-top: 15px;
+                margin-top: $default_spacing/2;
+                padding: $default_spacing/4;
                 .map-container {
                     position: relative;
                     & > img {
                         width: 300px;
-                        margin-right: 15px;
+                        margin-right: $default_spacing;
                     }
                     .marker {
                         @include absoluteCenter;
@@ -210,13 +215,14 @@
                     text-align: left;
                     flex-direction: column;
                     justify-content: space-between;
-                    h3 {
+                    h4 {
                         color: $text_color_primary;
-                        margin-top: 15px;
+                        margin-top: $default_spacing/4;
                     }
                     p {
                         color: $text_color_secondary;
                         line-height: 30px;
+                        font-size: 14px;
                     }
                     button {
                         display: inline-block;

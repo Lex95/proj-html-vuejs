@@ -1,16 +1,20 @@
 footer {
+    * {
+        font-family: 'Times New Roman', Times, serif;
+    }
     .logo-banner {
-        padding: 40px;
+        padding: $default_spacing;
         background-color: $bg_color_secondary;
         align-items: center;
         ul {
             li {
                 display: inline-block;
-                margin-left: 20px;
+                margin-left: $default_spacing/2;
                 a {
                     color: $text_color_secondary;
                     text-transform: capitalize;
                     text-decoration: none;
+                    font-size: 12px;
                     &:hover {
                         color: $text_color_primary;
                     }
@@ -19,19 +23,19 @@ footer {
         }
     }
     .credits-banner {
-        padding: 30px 40px;
+        padding: $default_spacing;
         background-color: $bg_color_primary;
         align-items: center;
         ul {
             li {
                 display: inline-block;
                 color: $text_color_secondary;
-                font-size: small;
             }
         }
         .credits {
             li {
-                padding: 0 10px;
+                padding: 0 $default_spacing/4;
+                font-size: 11px;
                 &:nth-child(n+2) {
                     border-left: 1px solid $text_color_secondary;
                     text-transform: uppercase;
@@ -45,7 +49,7 @@ footer {
                 height: 30px;
                 line-height: 30px;
                 background-color: $bg_color_secondary;
-                margin-left: 10px;
+                margin-left: $default_spacing/4;
                 &:hover {
                     color: $text_color_primary;
                 }
